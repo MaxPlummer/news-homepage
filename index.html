@@ -23,12 +23,24 @@
   <body>
     <header>
       <img src="./assets/images/logo.svg" style="width: 65px; height: auto" />
-      <nav>
-        <a href="#">Home</a>
-        <a href="#">New</a>
-        <a href="#">Popular</a>
-        <a href="#">Trending</a>
-        <a href="#">Categories</a>
+      <!-- Hamburger icon to open sidebar -->
+      <button class="w3-button w3-right">
+        <img src="./assets/images/icon-menu.svg" style="width: 100%" />
+      </button>
+      <!-- Sidebar collapsed by default -->
+      <nav class="w3-sidebar w3-bar-block w3-display-right w3-collapse">
+        <button class="w3-bar-item w3-button">
+          <img
+            src="./assets/images/icon-menu-close.svg"
+            class="w3-right"
+            style="width: 32px; height: auto"
+          />
+        </button>
+        <a href="#" class="w3-bar-item w3-button">Home</a>
+        <a href="#" class="w3-bar-item w3-button">New</a>
+        <a href="#" class="w3-bar-item w3-button">Popular</a>
+        <a href="#" class="w3-bar-item w3-button">Trending</a>
+        <a href="#" class="w3-bar-item w3-button">Categories</a>
       </nav>
     </header>
 
