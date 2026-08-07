@@ -16,10 +16,53 @@
   --dark-grayish-blue: hsl(236, 13%, 42%);
   --very-dark-blue: hsl(240, 100%, 5%);
 }
-body, h1, h2, h3, h4, h5, h6 {
+.dark-bg {
+  background-color: var(--very-dark-blue);
+}
+.dark-bg p {
+  color: var(--grayish-blue)
+}
+.dark-bg h2 {
+  color: var(--soft-orange);
+}
+.dark-bg h3 {
+  color: var(--off-white)
+}
+.dark-bg h3:hover {
+  color: var(--soft-orange);
+  cursor: pointer;
+}
+body {
+  background-color: var(--off-white);
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--inter);
+  font-weight: 800;
+  color: var(--very-dark-blue);
+}
+p {
+  font-family: var(--inter);
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--dark-grayish-blue)
+}
+.read-more-btn {
+  background-color: var(--soft-red);
+  color: var(--very-dark-blue);
+  font-family: var(--inter);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 20%;
+}
+.read-more-btn:hover {
+  background-color: var(--very-dark-blue);
+  color: var(--off-white)
+}
+a {
   font-family: var(--inter);
 }
 .attribution {
+  font-family: var(--inter);
   font-size: 0.6875rem;
   text-align: center;
 }
