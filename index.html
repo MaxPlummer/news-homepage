@@ -23,17 +23,20 @@
   <body>
     <!-- Overlay for mobile sidebar-->
     <div class="w3-overlay" id="mobile-overlay"></div>
-    <header>
+    <header class="w3-container w3-section">
       <img src="./assets/images/logo.svg" style="width: 65px; height: auto" />
-      <!-- Hamburger icon to open sidebar -->
-      <button class="w3-button w3-right w3-hover-none" onclick="w3_open()">
+      <!-- Menu icon hidden on larger screens -->
+      <button
+        class="w3-button w3-right w3-hover-none w3-hide-medium w3-hide-large"
+        onclick="w3_open()"
+      >
         <img
           src="./assets/images/icon-menu.svg"
           class="w3-hover-opacity"
           style="width: 100%"
         />
       </button>
-      <!-- Sidebar collapsed by default -->
+      <!-- Mobile sidebar collapsed by default -->
       <nav
         class="w3-sidebar w3-bar-block w3-display-right"
         style="display: none; z-index: 3; width: 66.66%"
@@ -55,9 +58,17 @@
         <a href="#" class="w3-bar-item w3-button">Trending</a>
         <a href="#" class="w3-bar-item w3-button">Categories</a>
       </nav>
+      <!-- Navbar for larger screens -->
+      <div class="w3-bar w3-hide-small w3-right" style="width: auto">
+        <a href="#" class="w3-bar-item w3-button">Home</a>
+        <a href="#" class="w3-bar-item w3-button">New</a>
+        <a href="#" class="w3-bar-item w3-button">Popular</a>
+        <a href="#" class="w3-bar-item w3-button">Trending</a>
+        <a href="#" class="w3-bar-item w3-button">Categories</a>
+      </div>
     </header>
 
-    <main>
+    <main class="w3-container">
       <div>
         <h1>The Bright Future of Web 3.0?</h1>
 
