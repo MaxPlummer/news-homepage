@@ -16,20 +16,27 @@
   --dark-grayish-blue: hsl(236, 13%, 42%);
   --very-dark-blue: hsl(240, 100%, 5%);
 }
-.dark-bg {
+.new-articles {
   background-color: var(--very-dark-blue);
 }
-.dark-bg p {
+.new-articles p {
   color: var(--grayish-blue)
 }
-.dark-bg h2 {
+.new-articles h2 {
   color: var(--soft-orange);
 }
-.dark-bg h3 {
+.new-articles h3 {
   color: var(--off-white)
 }
-.dark-bg h3:hover {
+.new-articles h3:hover {
   color: var(--soft-orange);
+  cursor: pointer;
+}
+.top-3-articles h2 {
+  color: var(--soft-red)
+}
+.top-3-articles h3:hover {
+  color: var(--soft-red);
   cursor: pointer;
 }
 body {
