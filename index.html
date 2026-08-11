@@ -18,11 +18,11 @@
   <body>
     <!-- Overlay for mobile sidebar-->
     <div class="w3-overlay" id="mobile-overlay"></div>
-    <header class="w3-container w3-section">
+    <header class="w3-container">
       <img src="./assets/images/logo.svg" style="width: 65px; height: auto" />
       <!-- Menu icon hidden on larger screens -->
       <button
-        class="w3-button w3-right w3-hover-none w3-hide-medium w3-hide-large"
+        class="w3-button w3-right w3-hover-none w3-hide-large"
         onclick="w3_open()"
       >
         <img
@@ -64,8 +64,8 @@
     </header>
 
     <main class="w3-container">
-      <div class="w3-row" style="margin-bottom: 4rem">
-        <div class="w3-twothird pad-right" style="margin-bottom: 4rem">
+      <div class="w3-row">
+        <div class="w3-twothird pad-right">
           <!-- Web image switches for larger screen sizes -->
           <picture>
             <source
@@ -77,10 +77,10 @@
               style="width: 100%; padding-bottom: 1rem"
             />
           </picture>
-          <div class="w3-half pad-right-small">
+          <div class="w3-half pad-right" style="padding-top:1rem;">
             <h1>The Bright Future of Web 3.0?</h1>
           </div>
-          <div class="w3-half pad-left-small">
+          <div class="w3-half">
             <p>
               We dive into the next evolution of the web that claims to put the
               power of the platforms back into the hands of the people. But is
@@ -92,27 +92,33 @@
           </div>
         </div>
 
-        <div class="w3-third w3-padding new-articles">
+        <div class="w3-third w3-flex new-articles">
           <h2>New</h2>
 
-          <h3>Hydrogen VS Electric Cars</h3>
-          <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+          <div>
+            <h3>Hydrogen VS Electric Cars</h3>
+            <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+          </div>
 
-          <h3>The Downsides of AI Artistry</h3>
-          <p>
-            What are the possible adverse effects of on-demand AI image
-            generation?
-          </p>
+          <div>
+            <h3>The Downsides of AI Artistry</h3>
+            <p>
+              What are the possible adverse effects of on-demand AI image
+              generation?
+            </p>
+          </div>
 
-          <h3>Is VC Funding Drying Up?</h3>
-          <p>
-            Private funding by VC firms is down 50% YOY. We take a look at what
-            that means.
-          </p>
+          <div>
+            <h3>Is VC Funding Drying Up?</h3>
+            <p>
+              Private funding by VC firms is down 50% YOY. We take a look at
+              what that means.
+            </p>
+          </div>
         </div>
       </div>
 
-      <div class="w3-row">
+      <div class="w3-row"  style="margin-top: 4rem">
         <div class="w3-third w3-margin-bottom top-3-articles">
           <div class="w3-left w3-margin-right">
             <img
