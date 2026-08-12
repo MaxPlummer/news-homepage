@@ -12,24 +12,29 @@
     <!-- Link to W3.CSS framework -->
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css" />
     <link rel="stylesheet" href="./style.css" />
+    <script src="./menu.js"></script>
     <title>Frontend Mentor | News homepage</title>
   </head>
 
   <body>
     <!-- Overlay for mobile sidebar-->
-    <div class="w3-overlay" id="mobile-overlay"></div>
+    <div onclick="w3_close()" class="w3-overlay" id="mobile-overlay"></div>
     <header class="w3-container">
-      <img src="./assets/images/logo.svg" alt="Logo" style="width: 65px; height: auto" />
+      <img
+        src="./assets/images/logo.svg"
+        alt="Logo"
+        style="width: 65px; height: auto"
+      />
       <!-- Menu icon hidden on larger screens -->
       <button
-        class="w3-button w3-right w3-hover-none w3-hide-large"
+        class="w3-button w3-right w3-hide-large"
         onclick="w3_open()"
+        style="width: auto; padding: 16px"
       >
         <img
           src="./assets/images/icon-menu.svg"
           alt="Menu"
-          class="w3-hover-opacity"
-          style="width: 100%"
+          style="width: 40px"
         />
       </button>
       <!-- Mobile sidebar collapsed by default -->
@@ -39,13 +44,13 @@
         id="mobile-menu"
       >
         <button
-          class="w3-bar-item w3-button w3-hover-none"
+          class="w3-bar-item w3-button w3-right"
           onclick="w3_close()"
+          style="width: auto; padding: 16px"
         >
           <img
             src="./assets/images/icon-menu-close.svg"
             alt="Close Menu"
-            class="w3-right w3-hover-opacity"
             style="width: 32px; height: auto"
           />
         </button>
@@ -56,12 +61,16 @@
         <a href="#" class="w3-bar-item w3-button">Categories</a>
       </nav>
       <!-- Navbar for larger screens -->
-      <div class="w3-bar w3-hide-small w3-right" style="width: auto">
-        <a href="#" class="w3-bar-item w3-button">Home</a>
-        <a href="#" class="w3-bar-item w3-button">New</a>
-        <a href="#" class="w3-bar-item w3-button">Popular</a>
-        <a href="#" class="w3-bar-item w3-button">Trending</a>
-        <a href="#" class="w3-bar-item w3-button">Categories</a>
+      <div
+        id="navbar"
+        class="w3-bar w3-hide-small w3-right"
+        style="width: auto"
+      >
+        <a href="#" class="w3-bar-item">Home</a>
+        <a href="#" class="w3-bar-item">New</a>
+        <a href="#" class="w3-bar-item">Popular</a>
+        <a href="#" class="w3-bar-item">Trending</a>
+        <a href="#" class="w3-bar-item">Categories</a>
       </div>
     </header>
 
@@ -80,7 +89,7 @@
               alt="Web 3.0"
             />
           </picture>
-          <div class="w3-half pad-right" style="padding-top:1rem;">
+          <div class="w3-half pad-right" style="padding-top: 1rem">
             <h1>The Bright Future of Web 3.0?</h1>
           </div>
           <div class="w3-half">
@@ -121,7 +130,7 @@
         </div>
       </div>
 
-      <div class="w3-row"  style="margin-top: 4rem">
+      <div class="w3-row" style="margin-top: 4rem">
         <div class="w3-third w3-margin-bottom top-3-articles">
           <div class="w3-left w3-margin-right">
             <img
@@ -176,19 +185,5 @@
       >. Coded by
       <a href="https://github.com/MaxPlummer" target="_blank">Max Plummer</a>.
     </footer>
-
-    <script>
-      // Opens the mobile menu and triggers the overlay
-      function w3_open() {
-        document.getElementById("mobile-menu").style.display = "block";
-        document.getElementById("mobile-overlay").style.display = "block";
-      }
-
-      // Closes the mobile menu and removes the overlay
-      function w3_close() {
-        document.getElementById("mobile-menu").style.display = "none";
-        document.getElementById("mobile-overlay").style.display = "none";
-      }
-    </script>
   </body>
 </html>
